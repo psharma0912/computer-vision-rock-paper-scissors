@@ -1,25 +1,11 @@
 import random
 #choice_list=['rock', 'paper', 'scissors']
-
-# def get_computer_choice():
-#    computer_choice=random.choice(choice_list)
-#    print(computer_choice)
-#    return computer_choice.lower()
-
-# def get_user_choice():
-#     user_choice=input('Enter a choice:').lower()
-#     print (user_choice)
-#     return user_choice
-
-# get_computer_choice()
-
-# get_user_choice()
-
 def get_computer_choice():
+    global choice_list
     choice_list = ['Rock','Paper','Scissors']
     computer_choice = random.choice(choice_list)
-    print(computer_choice)
     return computer_choice.lower()
+
 
 
 def get_user_choice():
@@ -30,7 +16,7 @@ def get_user_choice():
         else:
             print('Please choose one of the options selected')
 
-get_computer_choice()
+        get_computer_choice()
 
 get_user_choice()
-           
+        
