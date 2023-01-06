@@ -1,8 +1,8 @@
 import random
-choice_list=['rock', 'paper', 'scissors']
+#choice_list=['rock', 'paper', 'scissors']
 
 def get_computer_choice():
-    #choice_list = ['Rock','Paper','Scissors']
+    choice_list = ['Rock','Paper','Scissors']
     computer_choice = random.choice(choice_list)
     return computer_choice.lower()
 
