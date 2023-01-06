@@ -1,5 +1,5 @@
 import random
-choice_list=['rock', 'paper', 'scissors']
+#choice_list=['rock', 'paper', 'scissors']
 
 # def get_computer_choice():
 #    computer_choice=random.choice(choice_list)
@@ -16,7 +16,7 @@ choice_list=['rock', 'paper', 'scissors']
 # get_user_choice()
 
 def get_computer_choice():
-    #choice_list = ['Rock','Paper','Scissors']
+    choice_list = ['Rock','Paper','Scissors']
     computer_choice = random.choice(choice_list)
     print(computer_choice)
     return computer_choice.lower()
