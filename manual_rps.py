@@ -27,6 +27,8 @@ def get_user_choice():
         user_choice = input('Please choose Rock, Paper or Scissors:').lower()
         if user_choice == 'rock' or user_choice == 'scissors' or user_choice == 'paper':
             return user_choice
+        else:
+            print('Please choose one of the options selected')
 
 get_computer_choice()
 
