@@ -18,6 +18,7 @@ choice_list=['rock', 'paper', 'scissors']
 def get_computer_choice():
     #choice_list = ['Rock','Paper','Scissors']
     computer_choice = random.choice(choice_list).lower()
+    print(computer_choice)
     return computer_choice
 
 
@@ -27,7 +28,7 @@ def get_user_choice():
         if user_choice == 'rock' or user_choice == 'scissors' or user_choice == 'paper':
             return user_choice
 
-        get_computer_choice()
+get_computer_choice()
 
 get_user_choice()
            
