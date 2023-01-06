@@ -16,7 +16,4 @@ def get_user_choice():
         else:
             print('Please choose one of the options selected')
 
-        get_computer_choice()
-
-get_user_choice()
         
