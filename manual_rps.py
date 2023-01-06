@@ -1,10 +1,10 @@
 import random
 
-word_list=['rock', 'paper', 'scissor']
-word=random.choice(word_list)
-
 
 def get_computer_choice():
+    word_list=['rock', 'paper', 'scissor']
+    word=random.choice(word_list)
+
     if word in word_list:
         print(word)
     return word
