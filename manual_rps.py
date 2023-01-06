@@ -1,23 +1,21 @@
 import random
 
 word_list=['rock', 'paper', 'scissor']
-word=random.choice(word_list)
+computer_choice=random.choice(word_list)
 
 
-def get_computer_choice(user_choice):
-    
-    if user_choice in word_list:
-        #print(word)
-        return user_choice
+def get_computer_choice():
+    return computer_choice
 
 def get_user_choice():
     while True:
         user_choice=input('Enter a choice:')
-        print (user_choice)
-        
-        get_computer_choice(user_choice)
+        return user_choice
+    #get_computer_choice()
 
 get_user_choice()
+
+get_computer_choice()
 
 
 
