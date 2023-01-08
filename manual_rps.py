@@ -15,7 +15,8 @@ def get_user_choice():
         return player
 
 
-get_computer_choice()
+# get_computer_choice()
 
-get_user_choice()
+# get_user_choice()
+
 
