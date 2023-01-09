@@ -3,10 +3,8 @@ import random
 
 # computer randomly selects a choice   
 def get_computer_choice():
-    computer = random.choice(['rock','paper','scissors'])
-    print(f'computer choice is {computer}')
-    return computer
-   
+    return random.choice(['rock','paper','scissors'])
+      
 # user is asked to input their choice  
 def get_user_choice():
     while True:
