@@ -1,15 +1,15 @@
 import random
-#choice_list = ['rock','paper','scissors']
+
 
 # computer randomly selects a choice   
 def get_computer_choice():
-    return random.choice(['rock','paper','scissors'])
+    return random.choice(['Rock','Paper','Scissors'])
       
 # user is asked to input their choice  
 def get_user_choice():
     while True:
-        player = input('rock, paper, or scissors?: ')
-        if player in ['rock','paper','scissors']:
+        player = input('Rock, Paper, or Scissors?: ')
+        if player in ['Rock','Paper','Scissors']:
             return player
         else:
             print('Invalid choice. Please try again')
