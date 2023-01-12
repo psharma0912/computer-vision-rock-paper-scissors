@@ -18,19 +18,28 @@ def get_user_choice():
         else:
             print('Invalid choice. Please try again')
 
-def get_winner(get_computer_choice, get_user_choice):
-    if 'Rock' in get_computer_choice() and 'Scissors' in get_user_choice():
+def get_winner(computer_choice, user_choice):
+    if user_choice == 'Rock' and computer_choice == 'Paper':
         print ('You lost!')
-    elif 'Rock' in get_computer_choice() and 'Paper' in get_user_choice():
-        print ('You won!')
+    elif user_choice == 'Rock' and computer_choice == 'Scissors':
+        print('You win!')
+    elif user_choice == 'Paper' and computer_choice == 'Scissors':
+        print('You lost!')
+    elif user_choice == 'Paper' and computer_choice == 'Rock':
+        print('You win!')   
+    elif user_choice == 'Scissors' and computer_choice == 'Rock':
+        print('You lost!')   
+    elif user_choice == 'Scissors' and computer_choice == 'Paper':
+        print('You win!')
     else:
-        print ('Its a tie!')
+        print ('It is a tie!')
+
 
 
 
   
 
-get_winner(get_computer_choice, get_user_choice)
+#get_winner(get_computer_choice, get_user_choice)
 
 
 
