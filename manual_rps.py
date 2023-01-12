@@ -4,7 +4,7 @@ import random
 # computer randomly selects a choice   
 def get_computer_choice():
     computer_choice =random.choice(['Rock','Paper','Scissors'])
-    #print (f'comp_choice is {comp_choice}')
+    print (f'comp_choice is {computer_choice}')
     return computer_choice
        
       
@@ -19,27 +19,28 @@ def get_user_choice():
             print('Invalid choice. Please try again')
 
 def get_winner(computer_choice, user_choice):
-    if user_choice == 'Rock' and computer_choice == 'Paper':
-        print ('You lost!')
-    elif user_choice == 'Rock' and computer_choice == 'Scissors':
-        print('You win!')
-    elif user_choice == 'Paper' and computer_choice == 'Scissors':
-        print('You lost!')
-    elif user_choice == 'Paper' and computer_choice == 'Rock':
-        print('You win!')   
-    elif user_choice == 'Scissors' and computer_choice == 'Rock':
-        print('You lost!')   
-    elif user_choice == 'Scissors' and computer_choice == 'Paper':
-        print('You win!')
-    else:
-        print ('It is a tie!')
+    if user_choice == computer_choice:
+        print("Game is a draw") 
+    elif (user_choice == "Rock" and computer_choice== "Scissors") or ( user_choice == "Paper" and computer_choice == "Rock") or ( user_choice == "Scissors" and computer_choice == "Paper"):
+        print("You win")
+    else: 
+        print("You have lost")
+        
+get_computer_choice()
+
+get_user_choice() 
+
+get_winner(get_computer_choice, get_user_choice)
+
+ 
+
 
 
 
 
   
 
-#get_winner(get_computer_choice, get_user_choice)
+
 
 
 
