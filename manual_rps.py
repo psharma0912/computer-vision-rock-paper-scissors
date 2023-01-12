@@ -25,6 +25,10 @@ def get_winner(computer_choice, user_choice):
         print("You won!")
     else: 
         print("You lost!")
+
+def play(get_computer_choice, get_user_choice, get_winner):
+    return get_computer_choice, get_user_choice, get_winner
+    
         
 get_computer_choice()
 
@@ -32,6 +36,7 @@ get_user_choice()
 
 get_winner(get_computer_choice, get_user_choice)
 
+play(get_computer_choice, get_user_choice, get_winner)
  
 
 
