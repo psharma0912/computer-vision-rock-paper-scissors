@@ -3,9 +3,9 @@ import random
 
 # computer randomly selects a choice   
 def get_computer_choice():
-    comp_choice =random.choice(['Rock','Paper','Scissors'])
+    computer_choice =random.choice(['Rock','Paper','Scissors'])
     #print (f'comp_choice is {comp_choice}')
-    return comp_choice
+    return computer_choice
        
       
 # user is asked to input their choice  
@@ -28,11 +28,9 @@ def get_winner(get_computer_choice, get_user_choice):
 
 
 
-#     get_computer_choice()
+  
 
-#     get_user_choice()
-
-# get_winner(get_computer_choice, get_user_choice)
+get_winner(get_computer_choice, get_user_choice)
 
 
 
