@@ -12,4 +12,13 @@ def get_user_choice():
         else:
             print('Invalid choice. Please try again')
             
+def get_winner(computer_choice, user_choice):
+    if user_choice == computer_choice:
+            print("It is a tie!") 
+    elif (user_choice == "Rock" and computer_choice== "Scissors") or \
+            ( user_choice == "Paper" and computer_choice == "Rock") or \
+            ( user_choice == "Scissors" and computer_choice == "Paper"):
+        print("You won!")
+    else: 
+        print("You lost!")
 
