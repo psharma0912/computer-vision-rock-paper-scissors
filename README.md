@@ -3,6 +3,8 @@
 
 Rock Paper Scissors is a hand game usually played between two people. In this game, scissors can beat paper, paper can beat rock, and rock can beat scissors. 
 
+![title](Images/rps1.png)
+
 
 We are creating the Rock Paper Scissor game using the Computer Vision. A web based model called Teachable machine is used to create the model. It lets you train models entirely in the browser with no coding required. Four classes called Rock, Paper, Scissor and Nothing are created where user is showing image of each class to the computer and each class is getting trained. The "Nothing" class represents the lack of option in the image. Note  that the more images you train with, the more accurate the model will be.
 
