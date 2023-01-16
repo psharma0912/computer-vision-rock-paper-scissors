@@ -1,6 +1,13 @@
 import cv2
 from keras.models import load_model
 import numpy as np
+# import the time module
+import time
+
+# get the current time in seconds since the epoch
+seconds = time.time()
+
+print("Seconds since epoch =", seconds)	
 model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
