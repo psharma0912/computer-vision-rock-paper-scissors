@@ -2,7 +2,7 @@ import random
 
 def get_computer_choice():
     computer_choice =random.choice(['Rock', 'Paper', 'Scissors'])
-    #print (f'Computer choice is {computer_choice}')
+    print (f'Computer choice is {computer_choice}')
     return computer_choice
     
 
@@ -17,17 +17,15 @@ def get_user_choice():
 def get_winner(computer_choice, user_choice):
     if user_choice == computer_choice:
             print("It is a tie!") 
-    elif (user_choice == "Rock" and computer_choice== "Scissors") or \
-            ( user_choice == "Paper" and computer_choice == "Rock") or \
-            ( user_choice == "Scissors" and computer_choice == "Paper"):
+    elif (user_choice == "Rock" and computer_choice== "Scissors") or ( user_choice == "Paper" and computer_choice == "Rock") or ( user_choice == "Scissors" and computer_choice == "Paper"):
         print("You won!")
     else: 
         print("You lost!")
 
-def play():
-    return (get_computer_choice, get_user_choice, get_winner)
+# def play():
+#     return (get_computer_choice, get_user_choice, get_winner)
 
-get_winner(get_computer_choice(), get_user_choice())
+# get_winner(get_computer_choice(), get_user_choice())
 
 
 
