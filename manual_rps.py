@@ -2,9 +2,7 @@ import random
 
 def get_computer_choice():
     computer_choice =random.choice(['Rock', 'Paper', 'Scissors'])
-    #print (f'Computer choice is {computer_choice}')
     return computer_choice
-    
 
 def get_user_choice():
     while True:
@@ -23,6 +21,7 @@ def get_winner(computer_choice, user_choice):
         print("You won!")
     else: 
         print("You lost!")
+
 
 
 
