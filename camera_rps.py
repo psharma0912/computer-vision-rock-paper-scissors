@@ -1,9 +1,24 @@
 import cv2
+import time
 from keras.models import load_model
 import numpy as np
 model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
+
+# get the current time in seconds since the epoch
+seconds = time.time()
+print("Seconds since epoch =", seconds)	
+
+def count_countdown():
+    countdown = 5
+    print("Please prepare to show your choice")
+    while countdown > 0:
+        print(f'{countdown}')
+        cv2.waitKey(1000)
+        countdown -= 1
+    print('Show your hand now') 
+
 
 def get_prediction():
     while True: 
@@ -26,7 +41,11 @@ def get_prediction():
     # Destroy all the windows
     cv2.destroyAllWindows()
 
+count_countdown()    
+
 get_prediction()
+
+
 
 
 
