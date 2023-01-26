@@ -7,6 +7,7 @@ def get_computer_choice():
 def get_user_choice():
     while True:
         user_choice=input('Rock, Paper or Scissors?:')
+
         if user_choice in ['Rock', 'Paper', 'Scissors']:
             return user_choice
         else:
@@ -22,7 +23,16 @@ def get_winner(computer_choice, user_choice):
     else: 
         print("You lost")
 
-get_winner(get_computer_choice(),get_user_choice())
+
+def play():
+    return (get_computer_choice, get_user_choice, get_winner)
+
+get_winner(get_computer_choice(), get_user_choice())
+
+
+
+
+
 
 
 
